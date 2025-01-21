@@ -19,3 +19,140 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@font-face {
+  font-family: "league";
+  src: url("../fonts/LeagueSpartan-Bold.otf");
+}
+@font-face {
+  font-family: "brandon";
+  src: url("../fonts/brandon-grotesque-black-58a8a3e824392.otf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "quicksand";
+  src: url("../fonts/Quicksand-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "syne-bold";
+  src: url("../fonts/Syne-Bold.ttf");
+}
+
+.league {
+  font-family: "league";
+}
+.brandon {
+  font-family: "brandon";
+}
+.poppins {
+  font-family: "poppins";
+}
+.quicksand {
+  font-family: "quicksand";
+}
+.syne {
+  font-family: "syne-bold";
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  height: 15px;
+  aspect-ratio: 4;
+  --_g: no-repeat radial-gradient(farthest-side, #fff 90%, #fff0);
+  background: var(--_g) left, var(--_g) right;
+  background-size: 25% 100%;
+  display: grid;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  height: inherit;
+  aspect-ratio: 1;
+  grid-area: 1/1;
+  margin: auto;
+  border-radius: 50%;
+  transform-origin: -100% 50%;
+  background: #fff;
+  animation: l49 1s infinite linear;
+}
+.loader:after {
+  transform-origin: 200% 50%;
+  --s: -1;
+  animation-delay: -0.5s;
+}
+
+@keyframes l49 {
+  58%,
+  100% {
+    transform: rotate(calc(var(--s, 1) * 1turn));
+  }
+}
+
+.nav-list {
+  padding: 10px;
+  position: relative;
+}
+.nav-list::before {
+  position: absolute;
+  z-index: -10;
+  content: "";
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -100%);
+  background: #fff;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  transform-origin: right;
+}
+.nav-list:hover::before {
+  height: 105%;
+}
+.nav-list:hover > .nav-links {
+  filter: invert();
+}
+.nav-links {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  /* writing-mode: vertical-rl; */
+  writing-mode: sideways-lr;
+  text-orientation: sideways;
+}
+.mobile-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-nav ul{
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -1px 12px hsla(0, 1%, 68%, 0.1);
+  width: 100%;
+  height: 4rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mobile-nav ul li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav_link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav_link span{
+  font-size: 10px;
+}

@@ -5,7 +5,9 @@ export const metadata = {
   description: "This is my personal portfolio",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: Readonly<{
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body

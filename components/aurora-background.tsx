@@ -34,9 +34,8 @@ export function AuroraBackgroundComponent() {
           }}
           className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4 w-2/3 max-md:text-2xl max-md:leading-[26px] text-center"
         >
-          Welcome to my personal portfolio, where
-          <span className="underline ">coding</span> meets
-          
+          Welcome to my personal portfolio, where &nbsp;
+          <span className="underline ">coding</span> &nbsp;meets&nbsp;         
           <span className="text-[#F9CD35] ">creativity</span>
         </motion.div>
       </div>

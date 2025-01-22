@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
-import React from "react";
 import AuroraBackground from "./ui/aurora-background";
-import { FlipWords } from "./ui/flip-words";
 
 export function AuroraBackgroundComponent() {
-  const words = ['awesomeness', 'passion', 'creativity']
+
   return (
     <AuroraBackground>
       <div className="relative flex flex-col gap-4 items-center justify-center px- syne">
@@ -20,8 +18,8 @@ export function AuroraBackgroundComponent() {
         >
           Hey There! <br />
           <span>
-            I'm{" "}
-            <span className="text-black rounded-xl bg-[#F9CD35] poppins leading-10 px-4">
+            I'm 
+            <span className="text-black rounded-xl bg-[#F9CD35] opensans leading-10 px-4">
               Sofela Israel
             </span>
           </span>
@@ -36,14 +34,11 @@ export function AuroraBackgroundComponent() {
           }}
           className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4 w-2/3 max-md:text-2xl max-md:leading-[26px] text-center"
         >
-          Welcome to my personal portfolio, where{" "}
-          <span className="underline ">coding</span> meets{" "}
+          Welcome to my personal portfolio, where
+          <span className="underline ">coding</span> meets
           
           <span className="text-[#F9CD35] ">creativity</span>
         </motion.div>
-        {/* <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-          Debug now
-        </button> */}
       </div>
     </AuroraBackground>
   );

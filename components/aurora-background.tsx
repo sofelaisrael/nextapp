@@ -18,7 +18,7 @@ export function AuroraBackgroundComponent() {
         >
           Hey There! <br />
           <span>
-            I'm 
+            I&apos;m 
             <span className="text-black rounded-xl bg-[#F9CD35] opensans leading-10 px-4">
               Sofela Israel
             </span>

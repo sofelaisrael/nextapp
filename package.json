@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@radix-ui/react-hover-card": "^1.1.4",
-    "@react-spring/web": "^9.7.5",
     "@tabler/icons-react": "^3.28.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.1",

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import AuroraBackground from "./ui/aurora-background";
-import { TextGenerateEffect } from "./ui/text-generate";
 
 export function AuroraBackgroundComponent() {
 

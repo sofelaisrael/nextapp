@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import AuroraBackground from "./ui/aurora-background";
+import { TextGenerateEffect } from "./ui/text-generate";
 
 export function AuroraBackgroundComponent() {
 
@@ -16,9 +17,10 @@ export function AuroraBackgroundComponent() {
           }}
           className="text-3xl md:text-6xl font-bold dark:text-white text-center syne flex flex-col gap-4"
         >
+          
           Hey There! <br />
           <span>
-            I&apos;m 
+            I&apos;m &nbsp;
             <span className="text-black rounded-xl bg-[#F9CD35] opensans leading-10 px-4">
               Sofela Israel
             </span>
@@ -38,6 +40,7 @@ export function AuroraBackgroundComponent() {
           <span className="underline ">coding</span> &nbsp;meets&nbsp;         
           <span className="text-[#F9CD35] ">creativity</span>
         </motion.div>
+        <button className="px-5 bg-white rounded-lg text-black py-3">Download my CV</button>
       </div>
     </AuroraBackground>
   );

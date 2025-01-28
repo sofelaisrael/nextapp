@@ -112,7 +112,7 @@ const Comments = ({ commentsUrl, currentUserId }: CommentsProps) => {
       <div className="comment-form-title">Write a comment</div>
       <CommentForm
         submitLabel="Write"
-        handleSubmit={(text, username) => addComment(text, username, null)}
+        handleSubmit={(text) => addComment(text, null)}
       />
 
       <div className="comments-container">

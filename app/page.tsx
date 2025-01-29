@@ -117,7 +117,7 @@ export default function Home() {
 
       <div className="content max-w-[800px] max-lg:max-w-[600px] max-md:max-w-[400px] mx-auto pt-40 text-[70px] max-md:text-[48px] dot leading-[60px]">
         <div className="top">
-          Hey There! 👋
+          Hey There!✨ 👋
           <br />
           <span className="content max-md:hidden">
             I&apos;m&nbsp;
